@@ -19,11 +19,11 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 body{
-    width:100vw;
-        overflow-x: hidden;
-   color: #fff;
+     width:100vw;
+     overflow-x: hidden;
+     color: #fff;
      background: url('bd.png')  no-repeat center center fixed;
-    background-size: 100%;
+     background-size: 100%;
      background-repeat: no-repeat;
 }
 a{
