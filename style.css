@@ -22,8 +22,9 @@ body{
     width:100vw;
         overflow-x: hidden;
    color: #fff;
-     background: url('Desktop\ -\ 16.png')  no-repeat center center fixed;
+     background: url('bd.png')  no-repeat center center fixed;
     background-size: 100%;
+     background-repeat: no-repeat;
 }
 a{
     display: block;
