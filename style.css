@@ -72,7 +72,14 @@ a{
     width: 40%;
     font-family: 'Open Sans', sans-serif; 
 }
-
+.menu__link{
+    transition: 0.9s ease;
+}
+.menu__link:hover{
+    border-bottom: 4px solid #ffffff;
+    padding: 6px 0; 
+    transition: 0.3s ease;
+}
 .menu__list{
     display: flex;
     align-items: center;
@@ -88,6 +95,11 @@ a{
     font-size: 16px;
     line-height: 22px;
     margin-right: 24px;
+}
+.login p:hover{
+    border-bottom: 4px solid #ffffff;
+    padding: 6px 0; 
+    transition: 0.3s ease;
 }
 .container{
     max-width:1440px;
@@ -181,6 +193,13 @@ h1{
 }
 .leftblock{
    margin-bottom: 148px; 
+}
+.leftblock-content-img{
+    transition: 2s ease;
+}
+.leftblock-content-img:hover{
+    scale: 1.1;
+    transition: 0.5s ease;
 }
 .leftblock-content{
     position: relative;
