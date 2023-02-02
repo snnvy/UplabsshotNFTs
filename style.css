@@ -19,12 +19,13 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 body{
-     width:100vw;
-     overflow-x: hidden;
-     color: #fff;
+    width:100vw;
+    overflow-x: hidden;
+    color: #fff;
     background: url('bg.png')  no-repeat center center fixed;
     background-size: cover;
     height: 100%;
+
 }
 a{
     display: block;
@@ -72,6 +73,14 @@ a{
     width: 40%;
     font-family: 'Open Sans', sans-serif; 
 }
+.menu__list .small-login{
+    display: none;
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
 .menu__link{
     transition: 0.9s ease;
 }
@@ -79,11 +88,6 @@ a{
     border-bottom: 4px solid #ffffff;
     padding: 6px 0; 
     transition: 0.3s ease;
-}
-.menu__list{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
 }
 .login{
     display: flex;
@@ -97,12 +101,12 @@ a{
     margin-right: 24px;
 }
 .login p:hover{
-    border-bottom: 4px solid #ffffff;
+    border-bottom: 4px solid #fff;
     padding: 6px 0; 
     transition: 0.3s ease;
 }
 .container{
-    max-width:1440px;
+    max-width:90%;
     margin: 0 auto;
 }
 .section__one{
@@ -194,13 +198,6 @@ h1{
 .leftblock{
    margin-bottom: 148px; 
 }
-.leftblock-content-img{
-    transition: 2s ease;
-}
-.leftblock-content-img:hover{
-    scale: 1.1;
-    transition: 0.5s ease;
-}
 .leftblock-content{
     position: relative;
     width: 746px;
@@ -220,6 +217,13 @@ h1{
     left: 0;
     width: 140px;
     height: 140px;
+}
+.leftblock-content-img{
+    transition: 2s ease;
+}
+.leftblock-content-img:hover{
+    scale: 1.1;
+    transition: 0.5s ease;
 }
 .right-up-img{
     z-index: 3;
@@ -437,8 +441,7 @@ h1{
 .section__four_items{
     display: flex;
     justify-content: space-between;
-    min-width: 1240px;
-    max-width: 1240px;
+    width: 100%;
     margin-bottom: 48px;
 }
 .section__four_item{
@@ -664,6 +667,7 @@ h1{
 }
 .footer-container{
     width: 1240px;
+    padding-bottom: 78px;
 }
 .footer-content h4{
     font-family: 'DM Sans', sans-serif;
@@ -742,8 +746,24 @@ h1{
         padding: 24px 47px 4px 47px;
     }
 }
+
 @media only screen and (min-width : 100px) and (max-width : 767px){
-    
+    .header__container{
+        justify-content: space-between;
+        max-width: 85%;
+    }
+    .container{
+        max-width: 95%;
+    }
+    .section__two{
+        margin-left: 0;
+    }
+    .main-login{
+        display: none;
+    }
+    .menu__list .small-login{
+        display: flex;
+    }
     .openbtn{
         color: #FFF;
         background-color: transparent;
@@ -763,21 +783,21 @@ h1{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     .sidebar {
-        height: 200px;
+        height: auto;
         width: 0;
         position: fixed;
         z-index: 10;
         top: 0;
-        left: 0;
+
         right: 0;
-        background-color: rgba(57, 36, 107, 0.342);
+        background-color: rgba(57, 36, 107, 0.99);
         overflow-x: hidden;
         transition: 0.4s;
-        padding-top: 20px;
+        padding-top: 30px;
       }
     .sidebar .closebtn {
         position: absolute;
-        top: 30px;
+        top: 20px;
         right: 50px;
         font-size: 36px;
         margin-left: 50px;
@@ -809,9 +829,6 @@ h1{
 
 @media only screen and (min-width : 100px) and (max-width : 1239px) {
     
-    .container{
-        max-width: 95%;
-    }
     .section__one{
         margin-left: 0px;
     }
@@ -939,7 +956,6 @@ h1{
 
     }
     .section__two{
-        margin-left: 0px;
         margin-bottom: 100px;
     }
     .section__two-info h3{
@@ -1067,6 +1083,9 @@ h1{
         flex-wrap: nowrap;
         justify-content: start;
     }
+    .header__container{
+        max-width: 90%;
+    }
 }
 @media only screen and (min-width : 767.98px){
     .openbtn{
@@ -1108,9 +1127,37 @@ h1{
         margin-right: 40px;
     }
 }
-@media only screen and (min-width : 1440px) and (max-width : 1920px){
+@media only screen and (min-width : 1440px){
     .container{
-        max-width: 1600px;
+        max-width: 1440px;
+    }
+    .section__two{
+        margin-left: 0;
+    }
+    .section__one{
+        margin-left: 0;
+    }
+    .section__three-cards{
+        width: 100%;
+    }
+    .section__five-info{
+        width: 100%;
+        max-width: none;
+    }
+    .section__six-items{
+        max-width: none;
+        width: 100%;
+    }
+    .footer-container{
+        width: 100%;
+    }
+}
+@media only screen and (min-width : 100px) and (max-width : 469px){
+    .section__two-info{
+        justify-content: center;
+    }
+    .header__container{
+        max-width: none;
     }
 }
 
